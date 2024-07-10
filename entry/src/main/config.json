@@ -1,0 +1,80 @@
+{
+  "app": {
+    "bundleName": "com.example.gt3pro",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+    "default": {
+      "network": {
+        "cleartextTraffic": true
+      }
+    }
+  },
+  "module": {
+    "reqPermissions": [
+      {
+        "reason": "流量网络请求",
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "reason": "流量网络请求",
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "reason": "流量网络请求",
+        "name": "ohos.permission.SET_NETWORK_INFO"
+      },
+      {
+        "reason": "WLAN网络请求",
+        "name": "ohos.permission.MANAGE_WIFI_CONNECTION"
+      },
+      {
+        "reason": "WLAN网络请求",
+        "name": "ohos.permission.SET_WIFI_INFO"
+      },
+      {
+        "reason": "WLAN网络请求",
+        "name": "ohos.permission.GET_WIFI_INFO"
+      },
+      {
+        "name": "ohos.permission.READ_HEALTH_DATA",
+        "usedScene": {
+          "ability": [
+            ".MainAbility"
+          ]
+        }
+      }
+    ],
+    "deviceType": [
+      "liteWearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "name": ".MainAbility",
+        "srcLanguage": "js",
+        "srcPath": "MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:MainAbility_desc",
+        "label": "$string:MainAbility_label",
+        "type": "page"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index"
+        ],
+        "name": ".MainAbility"
+      }
+    ]
+  }
+}
